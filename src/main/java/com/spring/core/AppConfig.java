@@ -1,11 +1,13 @@
 package com.spring.core;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 @Configuration
+@ComponentScan(basePackages = "com.spring.core")
 public class AppConfig {
 
-    @Bean
+    /*@Bean
     public  Vehicle car() {
         return new Car();
     }
@@ -23,5 +25,5 @@ public class AppConfig {
     @Bean
     public  Traveler traveler() {
         return new Traveler(car()); //injeção de dependencia
-    }
+    }*/
 }
