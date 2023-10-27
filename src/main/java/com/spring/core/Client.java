@@ -18,11 +18,11 @@ public class Client {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         //Retrieve Spring Beans from Spring IOC Container
-        Car car = applicationContext.getBean(Car.class);
+        /*Car car = applicationContext.getBean(Car.class);
         car.move();
 
         Bike bike = applicationContext.getBean(Bike.class);
-        bike.move();
+        bike.move();*/
 
         Traveler traveler1 = applicationContext.getBean(Traveler.class);
         traveler1.startJourney();
